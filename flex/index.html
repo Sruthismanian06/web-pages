@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> sample web page</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <h1>Maara Bakes & Sweets </h1>
+            <p id="one">
+            Home | Delecious Sweets | Cake Variety | Contact Us</p>
+        </nav><br></header>
+<div class="bg">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="about us ">
+                  
+                <p>Welcome to <b>Maara Bakes and Sweets</b>, where passion meets flavor! We are a family-owned sweet shop offering a delightful range of freshly baked goods and traditional sweets. Our mission is to craft delicious treats made with the finest ingredients, ensuring every bite is a moment to remember.
+                    
+                    From custom cakes to classic Indian mithai, we blend tradition with modern flavors to bring you the best of both worlds. Whether you're celebrating a special occasion or simply indulging in a sweet craving, Maara Bakes and Sweets is here to make your day sweeter. 
+                    
+                    Join us and taste the love in every bite!
+                    </p>
+                    <br>
+                </div>
+<!--Search bar--->
+                <div class="search">
+                    <div class="searchbar"><input placeholder="search"></div>
+                    </div>
+<!--cart field---->
+                    <div class="cart">
+                        <button onclick="togglecart()">Cart (<span id="cart-count">0</span>)</button>
+                    </div>
+<!--about-->  <br>
+            <h2><b><i>Our Specalities</b></i></h2><br>
+            <p>At Maara Bakes and Sweets, we take pride in offering unique treats that stand out. Three of our most popular and beloved specialties are:</p>
+            <p><b><i> Rainbow Cakes - </b></i>A feast for the eyes and the taste buds! Our Rainbow Cakes are vibrant, multi-layered cakes, made with fresh, moist sponge and filled with rich, creamy frosting. Perfect for any celebration, these colorful creations are not just delicious but also a visual delight.<br><br>
+            <b><i>Chocolate Truffle -</b></i>Indulge in the rich, velvety goodness of our Chocolate Truffles. Crafted with the finest ingredients, these luxurious treats are filled with smooth, creamy chocolate ganache, offering a perfect melt-in-your-mouth experience. Each truffle is hand-rolled to perfection, providing an irresistible combination of textures and a rich, decadent flavor that chocolate lovers will adore. Whether you're gifting them or treating yourself, our Chocolate Truffles are a sweet escape into pure indulgence.<br>
+           <br><i><b>Ras Malai -</b></i>Savor the delicate and traditional flavors of Ras Malai, a beloved Indian dessert that combines soft, spongy milk cakes soaked in sweet, fragrant saffron milk. Topped with a sprinkle of cardamom and garnished with slivers of pistachio, our Ras Malai offers a melt-in-your-mouth experience that's both creamy and refreshing. This indulgent dessert is perfect for those who appreciate the timeless appeal of traditional sweets, with each bite transporting you to a world of rich flavors and textures.
+        </p><br><br>
+            </div>
+        </div><br>
+<!--products-->
+<h2> Delicious Sweets </h2>
+<br>
+<div class= "sweets"> 
+    <div class="product" id="1">
+        <img class="image" src="images/image.png"><br>
+        <h3>Chocolate Truffle</h3>
+        <p class="price">$25.00</p>
+        <button onclick="addToCart(1,'chocolate truffle',25)">Add To Cart</button>
+        
+    </div><br><br>
+
+    <div class="product" id="2">
+        <img class="image" src="images/image copy.png" alt="rasgulla"><br>
+        <h3>Rasgulla</h3>
+        <p class="price">$15.00</p>
+        <button onclick="addToCart(2,'rasgulla,15')">Add To Cart</button>
+        
+    </div><br><br>
+
+    <div class="product"  id="3">
+        <img class="image" src="images/image copy 2.png" alt="Mysore Pak"><br>
+        <h3>Mysore Pak</h3>
+        <p class="price">$10.00</p>
+        <button onclick="addToCart(3,'mysore pak,10')">Add To Cart</button>
+        
+    </div><br><br>
+
+    <div class="product"  id="4">
+        <img class="image" src="images/image copy 13.png" alt="kaju katli"><br>
+        <h3>Kaju Katli</h3>
+        <p class="price">$10.00</p>
+        <button onclick="addToCart(4,'kanju katli',10)"> Add To Cart</button>
+    
+    </div><br><br>
+
+    <div class="product"  id="5">
+        <img class="image" src="images/image copy 4.png" alt="choco barfi"><br>
+        <h3>Chocolate Barfi</h3>
+        <p class="price">$15.00</p>
+        <button onclick="addToCart(5,'chocolate barfi',15)"> Add To Cart</button>
+    
+    </div><br><br>
+
+    <div class="product"  id="6">
+        <img class="image" src="images/image copy 5.png"><br>
+        <h3>Rasamali</h3>
+        <p class="price">$20.00</p>
+        <button onclick="addToCart(5,'rasamali',20)"> Add To Cart</button>
+    
+    </div><br><br>
+
+    <div class="product"  id="7">
+    <img class="image" src="images/image copy 6.png"><br>
+    <h3>Gulab Jamun</h3>
+    <p class="price">$20.00</p>
+    <button onclick="addToCart(7,'gulab jamun',20)"> Add To Cart</button>
+
+</div><br><br>
+</div>
+
+<h2>Cakes Variety </h2><br>
+    <div class="cakes">
+        <div class="product" id ="8">
+            <img class="image" src="images/image copy 7.png"><br>
+            <h3>Chocolate Cake</h3> <p class="price">$25.00</p>
+            <button onclick="addToCart(8,'chocolate cake', 20)"> Add To Cart</button>
+        </div><br><br>
+        <div class="product" id ="9">
+            <img class="image" src="images/image copy 8.png"><br>
+            <h3>Vanilla Cake</h3> <p class="price">$15.00</p>
+            <button onclick="addToCart(8,'vanilla cake', 15)"> Add To Cart</button>
+            
+        </div><br><br>
+        <div class="product" id ="10">
+            <img class="image" src="images/image copy 9.png"><br>
+            <h3>Red velvet Cake</h3> <p class="price">$20.00</p>
+            <button onclick="addToCart(8,'red velvet cake', 20)"> Add To Cart</button>
+            
+        </div><br><br>
+        <div class="product" id ="11">
+            <img class="image" src="images/image copy 10.png"><br>
+            <h3> Fruit Cake</h3> <p class="price">$30.00</p>
+            <button onclick="addToCart(8,'fruit cake', 30)"> Add To Cart</button>
+            
+        </div><br><br>
+        <div class="product" id ="12">
+            <img class="image" src="images/image copy 11.png"><br>
+            <h3>Rainbow Cake</h3> <p class="price">$25.00</p>
+            <button onclick="addToCart(8,'rainbow cake', 25)"> Add To Cart</button>
+        
+        </div>
+    </div>
+
+<hr>
+    <br>
+            <h2>Contact Us</h2><br>
+        <div class="footer">
+    <p>We'd love to hear from you! Whether you have a question about our menu, need a custom order, or simply want to share your feedback, we're here to help. At Maara Bakes and Sweets, we strive to make every experience sweet and memorable.
+<br><br>
+        <h3 class="follow">Visit Us:</h3><br>
+        <p>[NGO-A Colony, RTO office road,
+        Opp.Forest Office, Palayamkottai-627007]</p>
+<br>
+        <h3 class="follow">Business Hours:</h3><br>
+        <p>Monday-Sunday, (6:30 AM to 10:30 PM)]</p><br>
+        <h3 class="follow"> Call Us:</h3><br>
+        <p>[8870801400 or 8667567842]</p><br>
+
+  </p></div>
+</body>
+</html>
